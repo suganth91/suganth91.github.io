@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Suganth, UX designer from India</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/animsition.css" rel="stylesheet">
+    <!--    Google fonts-->
+    <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro|Merriweather:300italic,700,400' rel='stylesheet' type='text/css'>
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      #fourofour{
+        background: #fff;
+      }
+      .fimage{
+        width: 270px;
+        margin: 0 auto;
+        display: block
+      }
+      .cta{
+        display: block!important;
+        margin: 20px auto;
+        width: 140px;
+        text-align: center;
+      }
+    </style>
+</head>
+
+<body class="scroll-lock">
+    <div id="pageload">
+      <div class="loader">
+      </div>
+    </div>
+    <section id="fourofour" style="height:100%">
+        <div class="container">
+            <div class="row ptb-30">
+              <div class="page">
+                <div class="col-md-6 col-sm-6 col-md-offset-3">
+                    <img src="img/404.png" class="fimage">
+                     <a class="cta" href="/">Take me Home</a>  
+                </div>
+                </div>
+            </div>
+        </div>
+            <div class="footer">
+              <p>Made in India with love. &copy; 2014</p>
+            </div>
+        </div>
+    </section>
+    </div>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/viewport.js"></script>
+    <script src="js/animsition.js"></script>
+    <script type="text/javascript">
+        /*$('#designProcess a').click(function(e) {
+            e.preventDefault()
+            $(this).tab('show')
+        })
+        $('worksMobile a').click(function(e) {
+            e.preventDefault()
+            $(this).tab('show')
+        })*/
+        $(document).scroll(function() {
+            $('.tools-icons:in-viewport(200)').do(function() {
+                $(".tools-icons .row").children().addClass('animated flipInX t-show');
+            })
+            $('#works:in-viewport(300)').do(function() {
+                $(".tools-icons .row").children().removeClass('animated flipInX t-show');
+                /*$('#navcard').attr('class', 'nav-card blue');*/
+            })
+            $('#works:in-viewport(20)').do(function() {
+              $('#navcard').attr('class', 'nav-card blue');
+              $('#carddescription').text($('#cd1').text());  
+            })
+            $('#skills:in-viewport(300)').do(function() {
+                $('#navcard').attr('class', 'nav-card green');
+                $('#carddescription').text($('#cd2').text());
+            })
+            $('#aboutme:in-viewport(300)').do(function() {
+                $('#navcard').attr('class', 'nav-card yellow');
+                $('#carddescription').text($('#cd3').text());
+                $(".tools-icons .row").children().removeClass('animated flipInX t-show');
+            })
+            $('#overlay').removeClass('nav-overlay-on');
+            $('#navcard').removeClass('side-over');
+            $('#hamb').removeClass('hamburger-close');
+        });
+        $(window).load(function() {
+          $("#pageload").fadeOut(2000);
+          $('body').removeClass('scroll-lock');
+        });
+        $(document).ready(function() {
+            $('.down-arrow').tooltip();
+            $('#hamb').click(function(){
+              $('#overlay').toggleClass('nav-overlay-on');
+              $('#navcard').toggleClass('side-over');
+              $('#hamb').toggleClass('hamburger-close');
+            });
+            
+            var tabChange = function () {
+            var tabs = $('#processtabs > li');
+            var active = tabs.filter('.active');
+            var next = active.next('li').length ? active.next('li').find('a') : tabs.filter(':first-child').find('a');
+            // Use the Bootsrap tab show method
+            next.tab('show');
+            };
+            // Tab Cycle function
+            var tabCycle = setInterval(tabChange, 5000);
+          
+            $(".animsition").animsition({
+              inClass               :   'fade-in',
+              outClass              :   'fade-out',
+              inDuration            :    1500,
+              outDuration           :    800,
+              linkElement           :   '.animsition-link', 
+              // e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+              touchSupport          :    true, 
+              loading               :    true,
+              loadingParentElement  :   'body', //animsition wrapper element
+              loadingClass          :   'animsition-loading',
+              unSupportCss          : [ 'animation-duration',
+                                        '-webkit-animation-duration',
+                                        '-o-animation-duration'
+                                      ]
+              //"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser. 
+              //The default setting is to disable the "animsition" in a browser that does not support "animation-duration". 
+            }); 
+        });
+      
+    </script>
+</body>
+
+</html>
