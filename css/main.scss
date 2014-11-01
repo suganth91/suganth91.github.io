@@ -1056,7 +1056,8 @@ body {
       margin: 0;
     }
     .contact-card{
-      transform: none;
+      transform: initial;
+      -webkit-transform: initial;
       width: 100%;
       height: auto;
       position: relative;
