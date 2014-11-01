@@ -861,6 +861,9 @@ body {
     position: Relative;
     z-index: 20;
   }
+   .noise{
+    background-image: none;
+  }
 }
 
 /*iPad only portrait*/
@@ -1134,6 +1137,9 @@ body {
     .embed-section{
       width: 90%;
     }
+  }
+  .noise{
+    background-image: none;
   }
   #fourofour{
     .fimage{
