@@ -1139,6 +1139,12 @@ body {
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
 only screen and (   min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5) {
+  #pageload{
+    .loader{
+      width: 35px;
+      height: 35px;
+    }
+  }
   .paper-wrap{
     .design-cards{
         @mixin dc2x {
