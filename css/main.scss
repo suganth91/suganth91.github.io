@@ -1147,6 +1147,9 @@ body {
   .pb-100{
     @include pb(40px);
   }
+  .ptb-30{
+    padding-top: 0px;
+  }
   .individual-page{
     .embed-section{
       width: 90%;
