@@ -997,6 +997,8 @@ body {
     }
     .paper-wrap{
       .skill-icons{
+        width: 305px;
+        margin: 0 auto;
         .sc-1,.sc-2{
           margin: 15px 5%;
           display: inline-block;
@@ -1130,6 +1132,33 @@ body {
   .individual-page{
     .embed-section{
       width: 90%;
+    }
+  }
+}
+@media 
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (   min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+  .paper-wrap{
+    .design-cards{
+        @mixin dc2x {
+            background-image: url(../img/retina/design_process@2x.png);
+            background-size: 400px 600px;
+        }
+        .dc-1,.dc-2,.dc-3{
+          @include dc2x;
+        }
+    }
+    .skill-icons{
+      .sc-1{
+        background-image: url(../img/retina/si_icon@2x.png);
+        background-size: 100px 100px;
+      }
+      
+      .sc-2{
+        background-image: url(../img/retina/si_icon2@2x.png);
+        background-size: 100px 100px;  
+      }
     }
   }
 }
