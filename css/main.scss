@@ -945,10 +945,6 @@ body {
           font-size: 28px;
           padding-bottom: 10px;
         }
-        h4{
-          font-size: 18px;
-          line-height: 28px;
-        }
       }
       .ptb-30{
         @include ptb(10px);
@@ -1041,6 +1037,10 @@ body {
         strong {
             color: #333;
         }
+    }
+    h4{
+      font-size: 18px;
+      line-height: 28px;
     }
   }
   .image-abt{
