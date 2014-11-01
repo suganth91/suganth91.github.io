@@ -1134,6 +1134,11 @@ body {
       width: 90%;
     }
   }
+  #fourofour{
+    .fimage{
+      width: 230px!important;
+    }
+  }
 }
 @media 
 only screen and (-webkit-min-device-pixel-ratio: 1.5),
@@ -1148,7 +1153,7 @@ only screen and (min-device-pixel-ratio: 1.5) {
   .paper-wrap{
     .design-cards{
         @mixin dc2x {
-            background-image: url(../img/retina/design_process@2x.png);
+            background-image: url(../img/Retina/design_process@2x.png);
             background-size: 400px 600px;
         }
         .dc-1,.dc-2,.dc-3{
@@ -1157,12 +1162,12 @@ only screen and (min-device-pixel-ratio: 1.5) {
     }
     .skill-icons{
       .sc-1{
-        background-image: url(../img/retina/si_icon@2x.png);
+        background-image: url(../img/Retina/si_icon@2x.png);
         background-size: 100px 100px;
       }
       
       .sc-2{
-        background-image: url(../img/retina/si_icon2@2x.png);
+        background-image: url(../img/Retina/si_icon2@2x.png);
         background-size: 100px 100px;  
       }
     }
