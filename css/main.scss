@@ -860,6 +860,11 @@ body {
   }
   .page{
     padding: 5px 40px;
+    .nav>li:hover {
+        strong {
+            color: #333;
+        }
+    }
   }
   .image-card{
     position: Relative;
@@ -1027,6 +1032,11 @@ body {
             display: none;
           }
       }
+    }
+    .nav>li:hover {
+        strong {
+            color: #333;
+        }
     }
   }
   .image-abt{
