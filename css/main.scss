@@ -396,6 +396,9 @@ body {
             padding-left: 0px;
         }
     }
+    .cf{
+          font-family: $font-b; 
+    }
     .skill-icons {
         .sc-1 {
             background-image: url(../img/mobile.gif);
@@ -416,9 +419,6 @@ body {
       height: 100%;
     }
     .design-cards {
-        .cf{
-          font-family: $font-b; 
-        }
         @mixin dc {
             background-image: url(../img/design-process.png);
             width: 196px;
