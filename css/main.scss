@@ -674,12 +674,12 @@ body {
   cursor: zoom-in;
 }
 .expand{
-  margin-left: -120%;
+  margin-left: -100%;
   cursor: zoom-out;
 }
 .expand-shadow{
   width: 600px;
-  margin-left: -100%;
+  margin-left: -90%;
   transition: all 0.7s!important;
 }
 .work-gallery{
@@ -960,12 +960,6 @@ body {
   }
   .nav-card{
     left: 5%;
-  }
-  .expand{
-    margin-left: -100%;
-  }
-  .expand-shadow{
-    margin-left: -90%;
   }
   .page{
     padding: 5px 40px;
