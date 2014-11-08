@@ -53,7 +53,7 @@
     <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro|Merriweather:300italic,700,400' rel='stylesheet' type='text/css'>
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -248,7 +248,7 @@
                                     <li>
                                         <a href="#mg4" role="tab" data-toggle="tab">
                                             <div class="work-tab">
-                                              <img class="screenshot iphone ipad" src="../img/ipad_s1.png">
+                                              <img class="screenshot iphone ipad" src="../img/ipad_s1.png" id="exhandle5">
                                               <p class="italics">Archives for iPad</p>
                                             </div>
                                         </a>
@@ -277,7 +277,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
-                                    <img class="screenshot web floating" src="../img/safari_s1.png">
+                                    <img class="screenshot web floating" src="../img/safari_s1.png" id="exhandle1">
                                     <div class="shadow-background"></div>
                                 </div>
                             </div>
@@ -292,7 +292,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
-                                    <img class="screenshot web floating" src="../img/safari_s2.png">
+                                    <img class="screenshot web floating" src="../img/safari_s2.png" id="exhandle2">
                                     <div class="shadow-background"></div>
                                 </div>
                             </div>
@@ -307,7 +307,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
-                                    <img class="screenshot web floating" src="../img/safari_s5.png">
+                                    <img class="screenshot web floating" src="../img/safari_s5.png" id="exhandle3">
                                     <div class="shadow-background"></div>
                                 </div>
                             </div>
@@ -322,7 +322,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
-                                    <img class="screenshot web floating" src="../img/safari_s3.png">
+                                    <img class="screenshot web floating" src="../img/safari_s3.png" id="exhandle4">
                                     <div class="shadow-background"></div>
                                 </div>
                             </div>
@@ -621,7 +621,7 @@ At every phase of my life, I learnt key lessons that shaped me from an Engineer 
                     <div class="paper-wrap contact-card">
                         <div class="row">
                             <div class="col-md-6 col-sm-6 left">
-                                <img src="img/suganth.jpg" class="img-circle dp">
+                                <img src="../img/suganth.jpg" class="img-circle dp">
                                 <ul class="contact-nav-list">
                                     <li><a href="mailto:suganth@live.in">suganth@live.in</a>
                                     </li>
@@ -694,6 +694,23 @@ At every phase of my life, I learnt key lessons that shaped me from an Engineer 
           $('body').removeClass('scroll-lock');
         });
         $(document).ready(function() {
+//          for web expand icons
+            $('#exhandle1').click(function(e){
+              $('#exhandle1').toggleClass('expand');
+              $('#exhandle1').siblings('.shadow-background').toggleClass('expand-shadow');
+            });
+            $('#exhandle2').click(function(e){
+              $('#exhandle2').toggleClass('expand');
+              $('#exhandle2').siblings('.shadow-background').toggleClass('expand-shadow');
+            });
+            $('#exhandle3').click(function(e){
+              $('#exhandle3').toggleClass('expand');
+              $('#exhandle3').siblings('.shadow-background').toggleClass('expand-shadow');
+            });
+            $('#exhandle4').click(function(e){
+              $('#exhandle4').toggleClass('expand');
+              $('#exhandle4').siblings('.shadow-background').toggleClass('expand-shadow');
+            });
             $('.down-arrow').tooltip();
             $('#hamb').click(function(){
               $('#overlay').toggleClass('nav-overlay-on');

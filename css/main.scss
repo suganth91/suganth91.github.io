@@ -668,6 +668,19 @@ body {
 }
 .web{
   width: 700px;
+  cursor: zoom-in;
+}
+.ipad{
+  cursor: zoom-in;
+}
+.expand{
+  margin-left: -120%;
+  cursor: zoom-out;
+}
+.expand-shadow{
+  width: 600px;
+  margin-left: -100%;
+  transition: all 0.7s!important;
 }
 .work-gallery{
   padding: 50px 0;
@@ -947,6 +960,12 @@ body {
   }
   .nav-card{
     left: 5%;
+  }
+  .expand{
+    margin-left: -100%;
+  }
+  .expand-shadow{
+    margin-left: -90%;
   }
   .page{
     padding: 5px 40px;
