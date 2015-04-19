@@ -27,6 +27,7 @@ body {
 }
 /*background colours*/
 #home{
+  background-color: #6338E3;
   background-image: url(../img/new-cover.jpg);
   background-size: cover;
   height: 100%;
@@ -1012,6 +1013,15 @@ body {
     left: -50%;
     z-index: 250;
   }
+  #home{
+    height: auto;
+    .col-md-4{
+      width: 46%;
+    }
+    .pb-100{
+      padding-bottom: 0px;
+    }
+  }
   .side-over{
     left: 5%;
   }
@@ -1052,19 +1062,18 @@ body {
     padding: 10px 0 0px;
     max-height: none;
     height: auto;
+    background-image: none;
   }
-  .page{
-    padding: 0px;
     .intro{
-      margin-top: 20px;
+      margin-top: 10px;
       overflow-x: hidden;
       overflow-y: visible;
       height: auto;
-      background: #aaa;
       background-image: none;
       .col-left{
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0px;
+        padding: 40px 10px;
         img{
           padding:0px;
           padding-bottom: 10px;
@@ -1074,7 +1083,12 @@ body {
         }
         h1{
           font-size: 28px;
+          margin-bottom: 10px;
+        }
+        .subtitle{
+          font-size: 18px;
           padding-bottom: 10px;
+          margin-top: 0px;
         }
       }
       .ptb-30{
@@ -1174,7 +1188,6 @@ body {
       font-size: 18px;
       line-height: 28px;
     }
-  }
   .image-abt{
     .col-md-5{
       display: none;
