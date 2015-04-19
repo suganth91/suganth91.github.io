@@ -1063,7 +1063,7 @@ body {
     max-height: none;
     height: auto;
     background-image: none;
-  }
+  
     .intro{
       margin-top: 10px;
       overflow-x: hidden;
@@ -1095,6 +1095,7 @@ body {
         @include ptb(10px);
       }
     }
+  }
     .work-gallery{
       display: none;
     }
