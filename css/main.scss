@@ -1073,6 +1073,12 @@ body {
         border-top-right-radius: 10px;
         border-bottom-left-radius: 0px;
         padding: 40px 10px;
+        .grad-btn{
+          width: 100%;
+          .rt-arrow{
+            right: 12%;
+          }
+        }
         img{
           padding:0px;
           padding-bottom: 10px;
