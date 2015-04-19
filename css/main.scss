@@ -1063,7 +1063,6 @@ body {
     max-height: none;
     height: auto;
     background-image: none;
-  
     .intro{
       margin-top: 10px;
       overflow-x: hidden;
@@ -1096,6 +1095,8 @@ body {
       }
     }
   }
+  .page{
+    padding: 0px;
     .work-gallery{
       display: none;
     }
@@ -1189,6 +1190,7 @@ body {
       font-size: 18px;
       line-height: 28px;
     }
+  }
   .image-abt{
     .col-md-5{
       display: none;
