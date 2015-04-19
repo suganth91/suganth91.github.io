@@ -27,7 +27,9 @@ body {
 }
 /*background colours*/
 #home{
-  background: #fafafa;
+  background-image: url(../img/new-cover.jpg);
+  background-size: cover;
+  height: 100%;
   position: relative;
   z-index: 199;
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.08);
@@ -82,7 +84,7 @@ body {
     box-sizing: border-box;
     border-radius: 12px;
     padding: 15px;
-    background-image: url(../img/gradient.png);
+    background-image: url(../img/gradient.jpg);
     background-repeat: no-repeat;
     transition: all 0.4s;
     h1 {
@@ -129,24 +131,24 @@ body {
 }
 .green {
     background-color: #fff;
-    background-image: url(../img/gradient.png);
+    background-image: url(../img/gradient.jpg);
     background-position: 0px -1504px;
     transition: all 0.4s;
 }
 .grey{
   background-color: #fff;
-  background: url(../img/intro-gradient.png); ;
+  background: url(../img/intro-gradient.jpg); ;
   background-size: cover;
 }
 .blue {
     background-color: #fff;
-    background-image: url(../img/gradient.png);
-    background-position: 0px -140px;
+    background-image: url(../img/gradient.jpg);
+    background-position: 0px -354px;
     transition: all 0.4s;
 }
 .yellow {
     background-color: #fff;
-    background-image: url(../img/gradient.png);
+    background-image: url(../img/gradient.jpg);
     background-position: 0px -2550px;
     transition: all 0.4s;
 }
@@ -296,16 +298,7 @@ body {
     }
 }
 .intro {
-    margin-top: 90px;
-    padding: 0px;
-    border-radius: 10px;
-    height: 400px;
-    overflow: hidden;
-    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.1) ;
-    background: #fff;
-    background-image: url(../img/intro-gradient.png);
-    background-repeat: no-repeat;
-    background-position: -1%;
+    margin-top: 30px;
     .col-left{
       height: 100%;
       border-top-left-radius: 10px;
@@ -315,13 +308,44 @@ body {
       h1 {
         color: #fff;
         font-weight: 700;
-        font-size: 36px;
+        font-size: 42px;
         padding-bottom: 7px;
+      }
+      .subtitle{
+        font-style: italic;
+        font-size: 26px;
+        color: #fff;
       }
       p {
           color: #fff;
           line-height: 30px;
       }
+      .grad-btn{
+        background: #35007F;
+        background-image: linear-gradient(-180deg, rgba(80,7,188,0.50) 0%, rgba(0,0,0,0.50) 100%);
+        border-radius: 8px;
+        padding: 10px 20px;
+        color: #fff;
+        font-family: $font-b;
+        font-size: 18px;
+        width: 90%;
+        margin: 20px 0;
+        display: block;
+        transition: 0.3s;
+        .rt-arrow{
+            background-image: url(../img/grad-btn-arrow.png);
+            position: absolute;
+            width: 20px;
+            right: 20%;
+            height: 20px;
+            display: inline-block;
+            background-size: cover;
+        }
+      }
+      .grad-btn:hover{
+        text-decoration: none;
+        opacity: 0.8;
+        transition: 0.3s;      }
       .nav-card-links {
           z-index: 10;
           font-size: 18px;
@@ -332,6 +356,7 @@ body {
           margin-bottom: 0px;
           li {
               a {
+                  margin-left: 10px;
                   text-decoration: none;
                   color: #fff;
                   .back-btn{
@@ -348,8 +373,11 @@ body {
               a:hover {
                   opacity: 0.8;
               }
-              border-top:1px solid rgb(187, 187, 187);
+              border-top: 1px solid rgba(255, 255, 255, 0.21);
               padding:12px 0;
+          }
+          li:last-child{
+            border-bottom: 1px solid rgba(255, 255, 255, 0.21);
           }
       }
     }
@@ -855,8 +883,8 @@ body {
   z-index: 5000;
   .loader{
     background-image: url(../img/mobile.gif);
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     background-size: cover;
     margin: 24% auto;
   }
