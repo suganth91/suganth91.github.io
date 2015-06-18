@@ -1346,6 +1346,39 @@ only screen and (min-device-pixel-ratio: 1.5) {
           @include dc2x;
         }
     }
+    .tools-icons{
+    @mixin t-icon{
+    background-image: url(../img/tools_sprite@2x.png);
+    background-size: 132px 426px;         
+    }
+    .ps{
+      @include t-icon;
+     }
+    .ae{
+      @include t-icon;
+     }
+    .ai{
+      @include t-icon;
+     }
+    .sk{
+      @include t-icon;
+     }
+    .html{
+      @include t-icon;
+     }
+    .css{
+      @include t-icon;
+     }
+    .sass{
+      @include t-icon;
+     }
+    .less{
+      @include t-icon;
+     }
+    .js{
+      @include t-icon;
+     }
+    }
     .skill-icons{
       .sc-1{
         background-image: url(../img/Retina/si_icon@2x.png);
